@@ -31,7 +31,11 @@ $(function(){
 });
 
 $(function(){
-	$(".red-box").fadeTo(1000, 0, function() {
-		alert("Done");
-	});
+	// $(".red-box").fadeTo(1000, 0, function() {
+	// 	alert("Done");
+	// });
+});
+
+$(function() {
+	$(".lightbox").delay(5000).fadeIn(2000);
 });
