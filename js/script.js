@@ -9,7 +9,13 @@ $(function() {
 });
 
 $(function(){
-	$(".red-box").hide(5000);
-	$(".red-box").show(3000);
-	$(".red-box").toggle(1000);
+	//$(".red-box").hide(5000);
+	//$(".red-box").show(3000);
+	//$(".red-box").toggle(1000);
+});
+
+$(function(){
+	$(".blue-box").slideUp(2000);
+	$(".blue-box").slideDown(2000);
+	$(".red-box").slideToggle(5000);
 });
