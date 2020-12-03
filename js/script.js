@@ -21,11 +21,17 @@ $(function(){
 });
 
 $(function(){
-	$('.blue-box').animate({
-		"margin-left": "200px",
-		"opacity": "0",
-		"height": "50px",
-		"width": "50px",
-		"margin-top": "25px"
-	}, 2000, "linear");
+	// $('.blue-box').animate({
+	// 	"margin-left": "200px",
+	// 	"opacity": "0",
+	// 	"height": "50px",
+	// 	"width": "50px",
+	// 	"margin-top": "2px"
+	// }, 2000, "linear");
+});
+
+$(function(){
+	$(".red-box").fadeTo(1000, 0, function() {
+		alert("Done");
+	});
 });
