@@ -1,0 +1,96 @@
+Jquery Method
+
+Hide/Show
+#. hide(), show(), toggle()
+
+Fade
+#. fadeIn(), fadeOut(), fadeToggle(), fadeTo(transition, opacity)
+
+Slide
+#. slideDown(), slideUp(), slideToggle()
+
+Animate - create custom animations
+#. animate({
+	left: '250px',
+	opacity: '0.5'
+}, transition);
+
+Stop - used to stop animations or effects before it is finished.
+#. stop()
+
+Callback
+#. hide("slow", function() {
+	// do something
+})
+
+Chaining
+#. css("color", "red")
+   .slideUp()
+   .slideDown()
+   .hide()
+
+Get Content
+#. text(), html(), val(), attr("href") - get attribute value
+Set Content
+#. text("Something"), html("<b>Something </b>"), val("something")
+  callback : 
+    $("#test1").text(function(i, origText){
+      return "Old text: " + origText + " New text: Hello world! (index: " + i + ")"; 
+    });
+  });
+
+  $("#btn2").click(function(){
+    $("#test2").html(function(i, origText){
+      return "Old html: " + origText + " New html: Hello <b>world!</b> (index: " + i + ")"; 
+    });
+ 
+ attr("href", "https:/www.org.com")
+  MultipleValueSet:  $("#w3s").attr({
+    "href" : "https://www.w3schools.com/jquery/",
+    "title" : "W3Schools jQuery Tutorial"
+  });
+  CallBack: $("#w3s").attr("href", function(i, origValue){
+    return origValue + "/jquery/";
+  });
+
+Add - Add element/text/elementwithtext inside element
+#. append(""), prepend("")
+ --multiple-append:  function appendText() {
+  var txt1 = "<p>Text.</p>";               // Create element with HTML 
+  var txt2 = $("<p></p>").text("Text.");   // Create with jQuery
+  var txt3 = document.createElement("p");  // Create with DOM
+  txt3.innerHTML = "Text.";
+  $("body").append(txt1, txt2, txt3);      // Append the new elements
+}
+ after(""), before("")	
+
+ --multiple.after/before: function afterText() {
+  var txt1 = "<b>I </b>";                    // Create element with HTML 
+  var txt2 = $("<i></i>").text("love ");     // Create with jQuery
+  var txt3 = document.createElement("b");    // Create with DOM
+  txt3.innerHTML = "jQuery!";
+  $("img").after(txt1, txt2, txt3);          // Insert new elements after <img>
+}
+
+Remove
+#. remove()/remove(".test"), empty()
+
+CSS Classes
+#. addClass(), removeClass(), toggleClass()
+  css({"background-color": "yellow", "font-size": "200%"});
+
+Dimensions - Find tag dimension
+#. width(), height() - without padding
+   innerWidth(), innerHeight() -  include padding
+   outerWidth(), outerHeight() - includes padding and border, if pass true [outerHeight(true)] as parameter then includes margin also
+  (document).width(), (document).height() or (window).width(), (window).height()
+ Set width, height: width(500).height(500)
+
+
+
+
+ 
+
+
+
+

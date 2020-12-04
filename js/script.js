@@ -37,5 +37,5 @@ $(function(){
 });
 
 $(function() {
-	$(".lightbox").delay(5000).fadeIn(2000);
+	//$(".lightbox").delay(5000).fadeIn(2000);
 });
