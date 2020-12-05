@@ -86,6 +86,39 @@ Dimensions - Find tag dimension
   (document).width(), (document).height() or (window).width(), (window).height()
  Set width, height: width(500).height(500)
 
+Traversing
+#. Ancestors -
+   ("span").parent() - only one level selected(means one parent selected)
+   ("span").parents() - All parents selected
+   ("span").parentsUntil("div") - Selected all unitil specified element
+#. Descendants
+   ("div").children() - all direct children of the selected element.
+   ("div").find("span") - descendant elements of the selected element
+   ("div").find("*") - all descendants of <div>
+#. Siblings
+  ("h2").siblings() - all sibling elements of the selected element
+  ("h2").next() - next sibling element of the selected element
+  ("h2").nextAll() - all next sibling elements of the selected element.
+  ("h2").nextUntil("h6") - all next sibling elements between two given arguments 
+   prev(), prevAll() and prevUntil() - methods work just like the methods above but with reverse functionality
+#. Filtering
+  ("div").first() - first element of the specified elements(from all divs selected first div)
+  ("div").last() -  last element of the specified elements
+  ("p").eq(1) - method returns an element with a specific index number of the selected elements
+  ("p").filter(".intro") - method lets you specify a criteria. Elements that do not match the criteria are removed from the selection, and those that match will be returned
+  ("p").not(".intro") - method returns all elements that do not match the criteria
+
+
+   
+  
+
+
+   
+
+
+
+
+
 
 
 
