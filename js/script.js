@@ -9,7 +9,7 @@ $(function() {
 });
 
 $(function(){
-	//$(".red-box").hide(5000);
+	//$(".red-box").hide(5000); 
 	//$(".red-box").show(3000);
 	//$(".red-box").toggle(1000);
 });

@@ -107,6 +107,7 @@ Traversing
   ("p").eq(1) - method returns an element with a specific index number of the selected elements
   ("p").filter(".intro") - method lets you specify a criteria. Elements that do not match the criteria are removed from the selection, and those that match will be returned
   ("p").not(".intro") - method returns all elements that do not match the criteria
+  -- filter/not abla to pass function: filter(function(index) {return index % 2 == 0;})
 
 
    
